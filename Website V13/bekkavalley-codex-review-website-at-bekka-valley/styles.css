@@ -386,6 +386,29 @@ section.block {
   display: block;
 }
 
+.homepage-hero-section {
+  margin-top: 1.4rem;
+}
+
+.homepage-hero-grid {
+  grid-template-columns: 1fr;
+}
+
+.homepage-hero-item {
+  border-radius: 24px;
+  border: 2px solid #e3d6b7;
+  background: #f4f9f1;
+}
+
+.homepage-hero-image {
+  width: 100%;
+  height: clamp(280px, 50vw, 620px);
+  display: block;
+  object-fit: cover;
+  object-position: center;
+}
+
+
 .about-highlight-card {
   border-top: 8px solid var(--mustard);
 }
@@ -423,6 +446,10 @@ section.block {
 
   .gallery-item img {
     height: 220px;
+  }
+
+  .homepage-hero-image {
+    height: clamp(220px, 56vw, 420px);
   }
 
   nav {
