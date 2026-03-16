@@ -30,7 +30,7 @@ a { text-decoration: none; color: inherit; }
   align-items: center;
   gap: 0.7rem;
   justify-content: space-between;
-  padding: 2.45rem min(5vw, 4rem) 0.9rem;
+  padding: 0.9rem min(5vw, 4rem);
   background: rgba(246, 252, 247, 0.92);
   border-bottom: 1px solid #c5dcc8;
 }
@@ -40,6 +40,7 @@ a { text-decoration: none; color: inherit; }
   font-size: 1.4rem;
 }
 .menu-toggle {
+  order: 4;
   display: none;
   border: 0;
   width: 42px;
@@ -49,7 +50,12 @@ a { text-decoration: none; color: inherit; }
   color: var(--green-dark);
   font-size: 1.3rem;
 }
-nav { display: flex; gap: 0.6rem; }
+nav {
+  order: 3;
+  display: flex;
+  gap: 0.6rem;
+  margin-left: auto;
+}
 nav a {
   font-weight: 800;
   padding: 0.55rem 0.95rem;
@@ -69,11 +75,7 @@ nav a.active {
 }
 
 .header-social {
-  position: absolute;
-  top: 0.35rem;
-  left: 50%;
-  transform: translateX(-50%);
-  margin-left: 0;
+  order: 2;
 }
 
 .social-link {
@@ -593,7 +595,7 @@ section.block {
   nav.open { display: flex; }
   .menu-toggle { display: inline-block; }
   .site-header {
-    padding-top: 2.5rem;
+    padding: 0.9rem min(5vw, 4rem);
   }
   .site-footer {
     flex-direction: column;
