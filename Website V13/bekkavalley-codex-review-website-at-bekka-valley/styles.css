@@ -30,7 +30,7 @@ a { text-decoration: none; color: inherit; }
   align-items: center;
   gap: 0.7rem;
   justify-content: space-between;
-  padding: 0.9rem min(5vw, 4rem);
+  padding: 2.45rem min(5vw, 4rem) 0.9rem;
   background: rgba(246, 252, 247, 0.92);
   border-bottom: 1px solid #c5dcc8;
 }
@@ -69,7 +69,11 @@ nav a.active {
 }
 
 .header-social {
-  margin-left: 0.2rem;
+  position: absolute;
+  top: 0.35rem;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-left: 0;
 }
 
 .social-link {
@@ -589,10 +593,7 @@ section.block {
   nav.open { display: flex; }
   .menu-toggle { display: inline-block; }
   .site-header {
-    flex-wrap: wrap;
-  }
-  .header-social {
-    margin-left: auto;
+    padding-top: 2.5rem;
   }
   .site-footer {
     flex-direction: column;
