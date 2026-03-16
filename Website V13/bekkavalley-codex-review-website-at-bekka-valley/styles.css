@@ -182,8 +182,74 @@ section.block {
   margin-top: 0;
   color: var(--green-dark);
 }
+.product-detail-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
 .product-detail-card p {
   line-height: 1.6;
+}
+
+.flavor-dropdown {
+  margin-top: auto;
+  border: 1px solid #d3e5d4;
+  border-radius: 12px;
+  background: #f7fcf8;
+}
+
+.flavor-dropdown > summary {
+  cursor: pointer;
+  padding: 0.75rem 0.9rem;
+  font-weight: 800;
+  color: var(--green-dark);
+}
+
+.flavor-dropdown[open] > summary {
+  border-bottom: 1px solid #d3e5d4;
+}
+
+.flavor-list {
+  display: grid;
+  gap: 0.6rem;
+  padding: 0.7rem;
+}
+
+.flavor-item {
+  border: 1px solid #d3e5d4;
+  border-radius: 10px;
+  background: #fff;
+}
+
+.flavor-item > summary {
+  list-style: none;
+  cursor: pointer;
+  display: grid;
+  grid-template-columns: 64px 1fr;
+  gap: 0.75rem;
+  align-items: center;
+  padding: 0.55rem;
+  font-weight: 700;
+  color: var(--green-dark);
+}
+
+.flavor-item > summary::-webkit-details-marker {
+  display: none;
+}
+
+.flavor-item img {
+  width: 64px;
+  height: 64px;
+  border-radius: 8px;
+  object-fit: cover;
+  border: 1px solid #d3e5d4;
+}
+
+.flavor-item p {
+  margin: 0;
+  padding: 0 0.75rem 0.65rem;
+  font-size: 0.95rem;
+  line-height: 1.45;
 }
 
 .band {
