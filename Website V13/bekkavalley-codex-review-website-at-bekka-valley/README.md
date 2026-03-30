@@ -22,3 +22,6 @@ To connect Shopify:
 python3 -m http.server 4173
 ```
 Then open `http://localhost:4173`.
+## Team collaboration
+See `CONTRIBUTING.md` for branch naming, review expectations, and PR checklist for this project.
+
